@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MyWhoosh 2 Garmin</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1d24;
+    --muted: #5a6270;
+    --border: #e2e5ea;
+    --accent: #007AFF;
+    --card: #f7f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151c;
+      --fg: #f2f3f5;
+      --muted: #9aa1ad;
+      --border: #2a2e37;
+      --accent: #4da3ff;
+      --card: #1a1d24;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 2.2em;
+    margin-bottom: 0.6em;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4em;
+  }
+  p, li {
+    font-size: 0.98rem;
+  }
+  ul {
+    padding-left: 1.3em;
+  }
+  li {
+    margin-bottom: 0.6em;
+  }
+  code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+  a { color: var(--accent); }
+  .callout {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 20px 0;
+    font-size: 0.95rem;
+  }
+  footer {
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy — MyWhoosh 2 Garmin</h1>
+  <p class="meta">Effective date: August 6, 2026</p>
+
+  <p>
+    MyWhoosh 2 Garmin ("the app") is an independent, unofficial utility
+    that copies your cycling activities from MyWhoosh into Garmin Connect.
+    It is not affiliated with, endorsed by, or sponsored by Garmin Ltd. or
+    MyWhoosh. Using it is subject to Garmin's and MyWhoosh's own Terms of
+    Service and Privacy Policies for how each of them handles your data
+    once it reaches their servers.
+  </p>
+
+  <div class="callout">
+    <strong>In short:</strong> there is no backend server for this app. It
+    runs entirely on your device and talks directly to MyWhoosh's and
+    Garmin's own official servers — the same ones their own apps use.
+  </div>
+
+  <h2>What the app accesses</h2>
+  <ul>
+    <li><strong>Your MyWhoosh email/username and password</strong> — used
+      only to sign in to MyWhoosh's own API on your behalf, so the app can
+      fetch your ride list.</li>
+    <li><strong>Your Garmin Connect email and password</strong> — used
+      only to sign in to Garmin's own official mobile login flow (the same
+      OAuth1/OAuth2 process the real Garmin Connect app uses), so the app
+      can upload activities on your behalf.</li>
+    <li><strong>Your ride data from MyWhoosh</strong> — title, date,
+      duration, distance, power, heart rate, cadence, and calories, for
+      whichever activities you choose to sync. This is read from MyWhoosh
+      and written to Garmin Connect; the app doesn't collect or retain it
+      anywhere beyond your device.</li>
+    <li><strong>App settings</strong> — which Garmin device model to
+      present activities as (Garmin Connect requires activities to claim a
+      real Garmin device before it will calculate Training Load and VO2
+      Max for them) and your auto-sync preferences.</li>
+  </ul>
+
+  <h2>Where it's stored</h2>
+  <p>Everything above stays <strong>on your device only</strong>:</p>
+  <ul>
+    <li>Passwords and session tokens are written exclusively to your
+      platform's secure, encrypted storage — Keychain on iOS/macOS,
+      encrypted <code>EncryptedSharedPreferences</code> (AndroidX
+      Security/Jetpack) on Android. If that secure storage is ever
+      unavailable, the app does not fall back to storing passwords in
+      plain text — it drops them and asks you to re-enter them instead.</li>
+    <li>Nothing is backed up off-device: Android backups are disabled for
+      this app, and iOS Keychain items are not synced via iCloud
+      Keychain.</li>
+    <li>Sync logs shown in the app (connection results, errors) never
+      include your password.</li>
+  </ul>
+
+  <h2>Where it's sent</h2>
+  <p>The app sends network requests only to:</p>
+  <ul>
+    <li><strong>MyWhoosh's servers</strong> (<code>mywhoosh.com</code> and
+      its API subdomains) — to log in and fetch your ride list.</li>
+    <li><strong>Garmin's servers</strong> (<code>garmin.com</code> and its
+      <code>sso.</code>/<code>connectapi.</code> subdomains) — to log in
+      and upload activities, using Garmin's own public mobile-app OAuth
+      credentials (not anything specific to you or this app).</li>
+  </ul>
+  <p>
+    All requests use HTTPS. The app does not use analytics, crash
+    reporting, advertising, or any other third-party SDK, and it does not
+    send your data to any server the developer operates or controls —
+    because none exists.
+  </p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li><strong>Disconnect an account</strong> at any time from Settings —
+      this clears that account's stored password and cached session from
+      your device immediately.</li>
+    <li><strong>Delete the app</strong> to remove everything it has
+      stored — since nothing is held on a server, uninstalling is
+      equivalent to a full data deletion. There's no separate "delete my
+      account" request to make, because there's no account on our end to
+      delete.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>
+    This app is not directed at children and is not knowingly used to
+    collect information from anyone under 13.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes, the updated version will be posted here with a
+    new effective date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:doronkakuli@gmail.com">doronkakuli@gmail.com</a></p>
+
+  <footer>
+    MyWhoosh 2 Garmin — an independent, unofficial integration.
+  </footer>
+</main>
+</body>
+</html>
