@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyWhoosh to Garmin Connect on Android | Setup and help</title>
+  <meta name="description" content="Copy MyWhoosh rides to Garmin Connect with a free, unofficial Android utility. Learn the setup steps, sign-in requirements and limits before installing.">
+  <style>
+    :root { color-scheme: light dark; --bg:#f5f7fa; --card:#fff; --fg:#19232e; --muted:#526273; --line:#d8e0e8; --accent:#075cb5; --notice:#edf4fb; }
+    @media(prefers-color-scheme:dark) { :root { --bg:#101820; --card:#18232e; --fg:#edf3fa; --muted:#b4c4d3; --line:#344655; --accent:#86c3ff; --notice:#1c3145; } }
+    * { box-sizing:border-box; }
+    body { margin:0; font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--fg); background:var(--bg); }
+    main { max-width:850px; margin:auto; padding:40px 24px 64px; }
+    nav { display:flex; gap:24px; flex-wrap:wrap; font-size:.88rem; margin-bottom:42px; }
+    a { color:var(--accent); text-underline-offset:3px; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+    .eyebrow { color:var(--muted); text-transform:uppercase; letter-spacing:.1em; font-size:.75rem; font-weight:700; }
+    h1 { font-size:clamp(2rem,5vw,3rem); line-height:1.14; letter-spacing:-.035em; max-width:700px; margin:12px 0 22px; }
+    .intro { font-size:1.15rem; max-width:680px; }
+    .button { display:inline-block; padding:12px 20px; margin:8px 0 12px; border-radius:8px; background:var(--accent); color:var(--card); font-weight:700; text-decoration:none; }
+    .meta, footer { color:var(--muted); font-size:.85rem; }
+    .notice { background:var(--notice); border-left:4px solid var(--accent); padding:16px 20px; border-radius:0 8px 8px 0; margin:26px 0 34px; }
+    .notice p { margin:0; }
+    section { margin-top:36px; }
+    h2 { font-size:1.4rem; line-height:1.3; margin:0 0 16px; }
+    h3 { font-size:1rem; margin:0 0 7px; }
+    p { margin:0 0 16px; }
+    ol, ul { padding-left:1.4em; }
+    li { padding-left:6px; margin:0 0 15px; }
+    .step { font-weight:700; }
+    .faq { padding:20px; background:var(--card); border:1px solid var(--line); border-radius:10px; margin:12px 0; }
+    .faq p:last-child { margin-bottom:0; }
+    footer { margin-top:42px; padding-top:22px; border-top:1px solid var(--line); }
+    @media(max-width:480px) { main { padding:26px 20px 48px; } nav { margin-bottom:30px; } .intro { font-size:1.06rem; } .faq { padding:17px; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Page navigation"><a href="#setup">Setup</a><a href="#help">Sync help</a><a href="./">Privacy policy</a></nav>
+  <header>
+    <p class="eyebrow">MyWhoosh 2 Garmin · Android</p>
+    <h1>Your MyWhoosh rides,<br>in Garmin Connect.</h1>
+    <p class="intro">A free, unofficial Android utility that copies your MyWhoosh rides to Garmin Connect, without exporting and importing every FIT file by hand.</p>
+    <a class="button" href="https://play.google.com/store/apps/details?id=com.dk.mywhoosh2garmin">Get it on Google Play</a>
+    <p class="meta">Android only. You need MyWhoosh and Garmin Connect accounts.</p>
+  </header>
+  <aside class="notice" aria-label="Before you install">
+    <p><strong>Know what you are connecting.</strong> This app needs sign-in credentials for both services. It is not an official integration and is not affiliated with or endorsed by MyWhoosh or Garmin. Read the <a href="./">privacy policy</a> before deciding whether to use it.</p>
+  </aside>
+  <section aria-labelledby="before">
+    <h2 id="before">What it does, and what it doesn't</h2>
+    <p>The app downloads a ride's FIT file from MyWhoosh, labels it with the Garmin device model you select, and uploads it to Garmin Connect. You can sync a ride manually or enable background checks for new rides.</p>
+    <p><strong>Uploading a ride is not the same as updating every Garmin metric.</strong> Do not rely on imported rides to update Training Status, Acute Load, VO2 max or Recovery Time. Those outcomes have not been verified for this app. Record with your Garmin device if you need the metrics that device normally provides.</p>
+    <p>Sync uses unofficial service connections, so changes at MyWhoosh or Garmin can interrupt it. Background timing is controlled by Android and can be delayed by battery settings. This is a best-effort utility, not an instant or guaranteed sync service.</p>
+  </section>
+  <section aria-labelledby="setup">
+    <h2 id="setup">Set up your first sync</h2>
+    <ol>
+      <li><span class="step">Install the Android app.</span> Use the <a href="https://play.google.com/store/apps/details?id=com.dk.mywhoosh2garmin">Google Play listing</a>. You need a MyWhoosh account with a recorded ride and a Garmin Connect account.</li>
+      <li><span class="step">Connect MyWhoosh in Settings.</span> Sign in with the account that holds your rides. If MyWhoosh says you are already logged in on another device, see the help below.</li>
+      <li><span class="step">Connect Garmin in Settings.</span> If Garmin asks for a verification code, enter it in the app. Never share the code with the developer or post it online.</li>
+      <li><span class="step">Choose the ride device.</span> Select the Garmin device model the uploaded ride should be labelled with. This changes the file's device label. It does not mean the ride was recorded on that physical device or guarantee extra Garmin metrics.</li>
+      <li><span class="step">Sync one ride and check Garmin Connect.</span> Confirm its date, duration and available ride data before syncing more. If you already record the same ride on your watch or bike computer, check for duplicates in Garmin and any connected services.</li>
+      <li><span class="step">Turn on background sync only if you want it.</span> Android decides when background checks run. Open the app and use manual sync when you need to check a ride now.</li>
+    </ol>
+  </section>
+  <section aria-labelledby="credentials">
+    <h2 id="credentials">Your sign-in details</h2>
+    <p>The app stores credentials and session tokens on your phone and uses them to sign in to MyWhoosh and Garmin. No server run by the developer receives your credentials or rides. A small developer-hosted version check also runs at launch; the <a href="./">privacy policy</a> explains that request and the storage details.</p>
+    <p>This is a description of how the app works, not an independent security audit. If you are not comfortable giving an unofficial app these credentials, do not connect your accounts. You can disconnect an account in Settings to remove its saved credentials and session from the app.</p>
+  </section>
+  <section aria-labelledby="help">
+    <h2 id="help">When a sync doesn't work</h2>
+    <article class="faq">
+      <h3>MyWhoosh says I am already logged in on another device</h3>
+      <p>Sign out of MyWhoosh on any device where the game is still signed in. Wait 15-30 minutes, then try connecting this app before opening the game again. Avoid repeated sign-in attempts during that wait. The error comes from MyWhoosh's session handling, not a missing ride.</p>
+    </article>
+    <article class="faq">
+      <h3>The ride has no downloadable FIT file</h3>
+      <p>This app needs the file supplied by MyWhoosh. Check whether that ride has a FIT download on the MyWhoosh website. If it does not, the app cannot create one. Do not keep retrying the same missing file.</p>
+    </article>
+    <article class="faq">
+      <h3>Garmin asks for upload consent or pauses uploads</h3>
+      <p>Sign in to the same Garmin Connect account and follow any consent request it shows. If Garmin is temporarily refusing uploads, wait rather than repeatedly pressing Sync. If you cannot find a consent request, ask Garmin support. The app cannot grant consent or remove an account restriction for you.</p>
+    </article>
+    <article class="faq">
+      <h3>The ride appears twice in another connected service</h3>
+      <p>The same ride may arrive through both MyWhoosh's connection and Garmin's connection. Review those links before syncing more. Keep the route you want, and check carefully before deleting any activity. Do not disconnect a service unless you understand which other activities use it.</p>
+    </article>
+    <article class="faq">
+      <h3>I still need help</h3>
+      <p>Check the app's sync log for the failed step. Email <a href="mailto:deltakernellabs@gmail.com">deltakernellabs@gmail.com</a> with the app version, phone/Android version and the error you see. If you send a support report from the app, review it first. Never send passwords, verification codes or session tokens, and do not post logs in a public thread.</p>
+    </article>
+  </section>
+  <footer>
+    <p>MyWhoosh 2 Garmin is an independent, unofficial utility. MyWhoosh and Garmin Connect are trademarks of their respective owners, named here to explain compatibility.</p>
+    <p><a href="https://play.google.com/store/apps/details?id=com.dk.mywhoosh2garmin">Google Play</a> · <a href="./">Privacy policy</a> · Updated November 18, 2026</p>
+  </footer>
+</main>
+</body>
+</html>
