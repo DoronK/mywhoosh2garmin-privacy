@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to get MyWhoosh rides into Garmin Connect | MyWhoosh 2 Garmin</title>
+  <meta name="description" content="Three honest ways to move MyWhoosh rides into Garmin Connect: manual FIT export, a free unofficial Android app, or dual-recording on a Garmin device. Limits included.">
+  <style>
+    :root { color-scheme: light dark; --bg:#f5f7fa; --card:#fff; --fg:#19232e; --muted:#526273; --line:#d8e0e8; --accent:#075cb5; --notice:#edf4fb; }
+    @media(prefers-color-scheme:dark) { :root { --bg:#101820; --card:#18232e; --fg:#edf3fa; --muted:#b4c4d3; --line:#344655; --accent:#86c3ff; --notice:#1c3145; } }
+    * { box-sizing:border-box; }
+    body { margin:0; font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--fg); background:var(--bg); }
+    main { max-width:850px; margin:auto; padding:40px 24px 64px; }
+    nav { display:flex; gap:24px; flex-wrap:wrap; font-size:.88rem; margin-bottom:42px; }
+    a { color:var(--accent); text-underline-offset:3px; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+    .eyebrow { color:var(--muted); text-transform:uppercase; letter-spacing:.1em; font-size:.75rem; font-weight:700; }
+    h1 { font-size:clamp(2rem,5vw,3rem); line-height:1.14; letter-spacing:-.035em; max-width:700px; margin:12px 0 22px; }
+    .intro { font-size:1.15rem; max-width:680px; }
+    .button { display:inline-block; padding:12px 20px; margin:8px 0 12px; border-radius:8px; background:var(--accent); color:var(--card); font-weight:700; text-decoration:none; }
+    .meta, footer { color:var(--muted); font-size:.85rem; }
+    .notice { background:var(--notice); border-left:4px solid var(--accent); padding:16px 20px; border-radius:0 8px 8px 0; margin:26px 0 34px; }
+    .notice p { margin:0; }
+    section { margin-top:36px; }
+    h2 { font-size:1.4rem; line-height:1.3; margin:0 0 16px; }
+    h3 { font-size:1rem; margin:0 0 7px; }
+    p { margin:0 0 16px; }
+    ol, ul { padding-left:1.4em; }
+    li { padding-left:6px; margin:0 0 15px; }
+    .step { font-weight:700; }
+    .faq { padding:20px; background:var(--card); border:1px solid var(--line); border-radius:10px; margin:12px 0; }
+    .faq p:last-child { margin-bottom:0; }
+    footer { margin-top:42px; padding-top:22px; border-top:1px solid var(--line); }
+    @media(max-width:480px) { main { padding:26px 20px 48px; } nav { margin-bottom:30px; } .intro { font-size:1.06rem; } .faq { padding:17px; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Page navigation"><a href="help.html">Setup and sync help</a><a href="metrics.html">Training Load explainer</a><a href="./">Privacy policy</a></nav>
+  <header>
+    <p class="eyebrow">MyWhoosh 2 Garmin · Guide</p>
+    <h1>How to get MyWhoosh rides into Garmin Connect.</h1>
+    <p class="intro">MyWhoosh does not send rides to Garmin Connect by itself. There are three ways to do it, and each one has honest trade-offs. This page compares them so you can pick the one that fits how you ride.</p>
+  </header>
+  <section aria-labelledby="manual">
+    <h2 id="manual">Option 1: export and import each ride by hand</h2>
+    <p>Export the FIT file from MyWhoosh (or from Strava, if your MyWhoosh account is linked there), then import it in Garmin Connect on the web with Import Data.</p>
+    <p><strong>Cost:</strong> free, no extra app. <strong>Limits:</strong> you repeat this for every ride, and the ride may appear in Garmin Connect without updating the training metrics you expect. Check the imported activity and your device rather than assuming every metric changed.</p>
+  </section>
+  <section aria-labelledby="app">
+    <h2 id="app">Option 2: MyWhoosh 2 Garmin (free Android app)</h2>
+    <p>MyWhoosh 2 Garmin is a free, unofficial Android utility built for exactly this gap. It downloads your MyWhoosh rides and uploads them to Garmin Connect, labelled with the Garmin device model you choose (Edge, Fenix, Forerunner and more). Garmin decides which training metrics it calculates from an uploaded ride; a successful upload does not guarantee a particular metric.</p>
+    <a class="button" href="https://play.google.com/store/apps/details?id=com.dk.mywhoosh2garmin">Get it on Google Play</a>
+    <p class="meta">Android only. You need MyWhoosh and Garmin Connect accounts.</p>
+    <p><strong>Honest limits.</strong> The app needs your MyWhoosh and Garmin sign-in; credentials stay encrypted on your phone and no developer server sees them. It is unofficial and not affiliated with or endorsed by MyWhoosh or Garmin. Background sync timing is controlled by Android. It does not promise Training Status, Acute Load, VO2 max or Recovery Time, and no particular training metric is guaranteed from an uploaded ride. The <a href="help.html">setup and sync help page</a> covers the full steps and limits.</p>
+  </section>
+  <section aria-labelledby="dual">
+    <h2 id="dual">Option 3: record on your Garmin device at the same time</h2>
+    <p>Record with a compatible Garmin device and sensors while you ride in MyWhoosh if you need the metrics that setup normally provides. Results depend on your device, sensors and Garmin's requirements.</p>
+    <p><strong>Cost:</strong> nothing extra if you already own the device. <strong>Limits:</strong> you start and stop two recordings for every ride, and if you also sync or import the MyWhoosh version you can end up with duplicates to clean up.</p>
+  </section>
+  <section aria-labelledby="which">
+    <h2 id="which">Which should you pick?</h2>
+    <ul>
+      <li><span class="step">A ride or two, once in a while:</span> manual export is fine.</li>
+      <li><span class="step">Regular MyWhoosh riding with an Android phone:</span> the app removes the weekly export chore.</li>
+      <li><span class="step">You need the metrics your Garmin setup normally provides:</span> dual-record with a compatible device and sensors.</li>
+    </ul>
+  </section>
+  <aside class="notice" aria-label="Unofficial utility">
+    <p><strong>About this site.</strong> This page is maintained by the developer of MyWhoosh 2 Garmin, a free and unofficial utility. It describes the manual and device options as fairly as the app option, because the right choice depends on how you ride.</p>
+  </aside>
+  <footer>
+    <p>MyWhoosh 2 Garmin is an independent, unofficial utility. MyWhoosh and Garmin Connect are trademarks of their respective owners, named here to explain compatibility.</p>
+    <p><a href="https://play.google.com/store/apps/details?id=com.dk.mywhoosh2garmin">Google Play</a> · <a href="help.html">Setup and sync help</a> · <a href="metrics.html">Training Load explainer</a> · <a href="./">Privacy policy</a> · Updated November 23, 2026</p>
+  </footer>
+</main>
+</body>
+</html>
